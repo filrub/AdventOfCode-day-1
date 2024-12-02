@@ -14,9 +14,7 @@ fs.readFile("list-day2.txt", function (err, data) {
     } else {
       for (index = 0; index < row.length; index++) {
         const halfBeforeTheUnwantedElement = row.slice(0, index);
-
         const halfAfterTheUnwantedElement = row.slice(index + 1);
-
         const copyWithoutThirdElement = halfBeforeTheUnwantedElement.concat(
           halfAfterTheUnwantedElement
         );
